@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: rgb(244, 246, 247); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar h4 {
+  font-size: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bag {
+  display: flex;
+  align-items: center;
+}
+.bag-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  font-size: 14px;
+}
+.not-found {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(68, 68, 68);
+  min-height: 80vh;
+}
+.not-found h2 {
+  font-size: 40px;
+}
+.not-found p {
+  font-size: 20px;
+}
+.product-image {
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
+}
+.cart-image {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.maintain-space {
+  margin-left: 6rem;
+}
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  width: 20rem;
+}
+.rating {
+  font-size: 13px;
+  color: #666;
+}
+.rating span {
+  color: #f54e31;
+  font-weight: 600;
+}
+.pointer {
+  cursor: pointer;
+}
+.cart-container {
+  height: 68vh;
+  overflow-y: auto;
+}
+.container {
+  padding-top: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* -------------------------ReactReadMoreReadLess----------------------- */
+.readMoreClassName {
+  color: rgb(15, 105, 223);
+}
+.readMoreClassName:hover {
+  color: initial;
+}
+.readLessClassName {
+  color: rgb(15, 105, 223);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkout-container {
+  text-align: center;
 }
